@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>📘 Dicionário League of Legends</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a class="header-icon" href="https://forms.gle/t7VmVkzU6yNQi5LfA" target="_blank" rel="noopener">📋</a>
+        <h1>📘 Dicionário do Lolzinho</h1>
+        <a class="header-icon" href="https://www.riotgames.com" target="_blank" rel="noopener">🎮</a>
+      </div>
+
+      <div class="selectors-area">
+        <select id="player-select">
+          <option value=""> Campeão Aliado </option>
+        </select>
+
+        <div class="matchup-header centered" id="matchup-header">
+          <span id="matchup-player">Campeão</span>
+          <span class="vs-text">VS</span>
+          <span id="matchup-enemy">Campeão</span>
+        </div>
+
+        <select id="enemy-select">
+          <option value=""> Compeão Inimigo </option>
+        </select>
+      </div>
+
+      <div class="analyze-wrapper">
+        <button id="analyzeBtn">⚔️ Matchup</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="cards-container" class="cards"></div>
+      <div id="match-card" class="matchup-card" style="display:none;"></div>
+    </main>
+
+    <footer>
+      <button class="linkedin-btn" onclick="window.open('https://www.linkedin.com/in/joão-victor-couto-464606358','_blank')">
+        🔗 Meu LinkedIn
+      </button>
+      <p>© Projeto pessoal sem afiliação com a Riot Games — Dicionário League of Legends 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
